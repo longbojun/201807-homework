@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<title>交互简历</title>
+	<script>
+	(function (n){
+		var deW=document.documentElement.clientWidth||document.body.width;
+		document.documentElement.style.fontSize=deW/640*100+"px";
+	})(640);
+	</script>
+	<style>
+		*{padding: 0;margin: 0;}
+		html,body{width: 100%;height: 100%;position: absolute;overflow: hidden;}
+		.loadingBox{width: 100%;height: 100%;background: #aaa url("./images/phone-bg.jpg")no-repeat center;position: absolute;overflow: hidden;}
+		header{width: 100%;position: absolute;top:25%;text-align: center;}
+		h1{font-size:0.5rem;color:#fff; }
+		h2{font-size: 0.25rem;color:#fff;padding: 0.1rem;}
+		.proBox{width: 80%;height: 0.4rem;background: #fff;position: absolute;top:54%;left:10%;border-radius: 0.5rem;overflow: hidden;}
+		.proBar{width: 0.8rem;height: 100%;background: linear-gradient(45deg,#6faa6d 0%,#6faa6d 25%,#77c570 25%,#77c570 50%,#6faa6d 50%,#6faa6d 75%,#77c570 75%,#77c570 100%);background-size:0.4rem 0.4rem;}
+	</style>
+</head>
+<body>
+	<section class="loadingBox">
+		<header>
+			<h1>珠峰培训</h1>
+            <h2>H5场景的交互型简历</h2>
+		</header>
+		<div class="proBox"><div class="proBar"></div></div>
+	</section>
+</body>
+</html>
